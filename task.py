@@ -32,7 +32,8 @@ def task_3():
         "Celine": "Fiat"
     }
 
-    car_make_lengths = ()
+    car_make_lengths = {}
+
     # Code here
     car_make_lengths2 = []
     i = 0
