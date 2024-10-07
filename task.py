@@ -32,14 +32,13 @@ def task_3():
         "Celine": "Fiat"
     }
 
-    car_make_lengths = {}
+    car_make_lengths = {""}
 
     # Code here
-    car_make_lengths2 = []
     i = 0
     for car in people_cars.values():
         x = len(car)
-        if not x in car_make_lengths2:
-            car_make_lengths2.append(x)
-    car_make_lengths = car_make_lengths2
+        if not x in car_make_lengths:
+            car_make_lengths.add(x)
+    car_make_lengths.remove("")
     return car_make_lengths
